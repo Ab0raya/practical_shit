@@ -1,16 +1,127 @@
-# practical_shit
 
-A new fucken Flutter project.
+# Flutter Multi-App Project 🚀
 
-## Getting Started
+This repository contains **three Flutter applications** built with proper state management and design patterns. Each app is fully responsive and designed with a clear UI/UX approach.
 
-This project is a starting point for a Flutter application.
+## 📦 Project Structure
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+.
+├── travel_app/           # Travel App (Basic navigation)
+├── burger_shop_app/      # Burger Shop App (Provider + MVC)
+└── coffee_shop_app/      # Coffee Shop App (GetX + MVC)
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 1️⃣ Travel App
+
+### ✨ Features:
+- **Home Page:** 
+  - Displays travel destinations.
+  - Clickable images that navigate to the **Details Page**.
+
+- **Product Details Page:** 
+  - Shows a short description of the selected travel destination.
+
+### 📌 Notes:
+- Simple navigation using `Navigator`.
+- Stateless architecture.
+
+---
+
+## 2️⃣ Burger Shop App (Provider + MVC)
+
+### 🧩 Architecture:
+- Follows **MVC Design Pattern**.
+- Uses **Provider** for state management.
+
+### 🧑‍🍳 Pages:
+- **Onboarding Page**: (Optional setup screen).
+- **Home Page**:
+  - List of burger items.
+  - Tab bar to filter items.
+  - Bottom navigation bar (non-functional).
+- **Product Details Page**:
+  - Product description.
+  - **Add to Cart** button.
+- **Cart Page**:
+  - Displays added items.
+  - User can increase quantity or remove items.
+
+### 💡 Notes:
+- Fully responsive UI.
+- No favorite or quantity counter on product detail page.
+
+---
+
+## 3️⃣ Coffee Shop App (GetX + MVC)
+
+### 🧩 Architecture:
+- Follows **MVC Design Pattern**.
+- Uses **GetX** for state management.
+
+### ☕ Pages:
+- **Onboarding Page**:
+  - Button navigates to **Home Page**.
+- **Home Page**:
+  - Displays list of coffee products.
+  - Tab bar for filtering items.
+  - Bottom navigation bar (non-functional).
+- **Product Details Page**:
+  - Product description.
+  - **Add to Cart** button.
+- **Cart Page**:
+  - Add/remove items.
+  - Change quantity.
+  
+### 🔑 Notes:
+- No favorite or quantity counter on details screen.
+- Custom design allowed for the cart page.
+
+---
+
+## 🛠 Requirements
+
+- ✅ Flutter (latest stable version)
+- ✅ Android Studio or VSCode
+- ✅ Proper device/emulator setup
+
+Install Flutter: [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
+
+---
+
+## 🧪 Running the Apps
+
+Navigate into any project directory and run:
+
+```bash
+flutter pub get
+flutter run
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🔗 Useful Links
+
+- [Flutter Documentation](https://flutter.dev/docs)
+- [Provider Package](https://pub.dev/packages/provider)
+- [GetX Package](https://pub.dev/packages/get)
+
+```
+
+---
+
+Let me know if you want a `pubspec.yaml`, `main.dart`, or folder structure for any of the apps to go with this `README.md`.
