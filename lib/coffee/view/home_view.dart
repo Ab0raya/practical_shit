@@ -110,7 +110,6 @@ class _HomeViewState extends State<HomeView> {
             ),
             SizedBox(height: screenHeight * 0.02),
 
-            /// 🟧 Tab Bar using GetX
             Obx(() {
               return Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -139,7 +138,6 @@ class _HomeViewState extends State<HomeView> {
 
             SizedBox(height: screenHeight * 0.02),
 
-            /// 🟧 View switching
             Obx(() {
               if (controller.currentIndex.value == 0) {
                 return Expanded(
@@ -196,7 +194,6 @@ class _HomeViewState extends State<HomeView> {
         ),
       ),
 
-      /// 🟧 Bottom Navigation using setState
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white12,
         type: BottomNavigationBarType.fixed,

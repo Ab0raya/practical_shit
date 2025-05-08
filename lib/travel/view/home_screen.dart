@@ -7,6 +7,26 @@ import 'detail_screen.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
+  Widget buildChip(String label, bool isSelected) {
+    return GestureDetector(
+      onTap: () {
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        margin: const EdgeInsets.only(right: 8),
+        decoration: BoxDecoration(
+          color: isSelected ? Colors.grey[200] : Colors.white,
+          borderRadius: BorderRadius.circular(30),
+          border: Border.all(color: Colors.grey[300]!),
+        ),
+        child: Text(
+          label,
+          style: const TextStyle(color: Colors.black),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final controller = Get.find<CityController>();
@@ -17,7 +37,6 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // Search and menu bar
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -75,6 +94,7 @@ class HomeScreen extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
+
               SizedBox(
                 height: 150,
                 child: ListView.builder(
@@ -112,13 +132,13 @@ class HomeScreen extends StatelessWidget {
                                 ),
                               ),
                             ),
-                             Align(
+                            Align(
                               alignment: Alignment.bottomCenter,
                               child: Padding(
-                                padding: EdgeInsets.all(12.0),
+                                padding: const EdgeInsets.all(12.0),
                                 child: Text(
                                   city.name,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -143,66 +163,21 @@ class HomeScreen extends StatelessWidget {
 
               const SizedBox(height: 16),
 
-              // Filter chips
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
-                    FilterChip(
-                      label: const Text("Best Places"),
-                      selected: true,
-                      onSelected: (_) {},
-                      backgroundColor: Colors.white,
-                      selectedColor: Colors.grey[200],
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: Colors.grey[300]!),
-                      ),
-                      labelStyle: const TextStyle(color: Colors.black),
-                    ),
-                    const SizedBox(width: 8),
-                    FilterChip(
-                      label: const Text("Most Visited"),
-                      selected: false,
-                      onSelected: (_) {},
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: Colors.grey[300]!),
-                      ),
-                      labelStyle: const TextStyle(color: Colors.black),
-                    ),
-                    const SizedBox(width: 8),
-                    FilterChip(
-                      label: const Text("Favourites"),
-                      selected: false,
-                      onSelected: (_) {},
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: Colors.grey[300]!),
-                      ),
-                      labelStyle: const TextStyle(color: Colors.black),
-                    ),
-                    const SizedBox(width: 8),
-                    FilterChip(
-                      label: const Text("New"),
-                      selected: false,
-                      onSelected: (_) {},
-                      backgroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        side: BorderSide(color: Colors.grey[300]!),
-                      ),
-                      labelStyle: const TextStyle(color: Colors.black),
-                    ),
+                    buildChip("Best Places", true),
+                    buildChip("Most Visited", false),
+                    buildChip("Favourites", false),
+                    buildChip("New", false),
                   ],
                 ),
               ),
 
               const SizedBox(height: 24),
 
-              // Featured cities
+
               Expanded(
                 child: ListView.builder(
                   itemCount: controller.cities.length,
@@ -236,17 +211,15 @@ class HomeScreen extends StatelessWidget {
                                     Colors.black.withOpacity(0.5),
                                   ],
                                 ),
-
                               ),
                             ),
                           ),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.end,
                             children: [
-                               Text(
+                              Text(
                                 city.name,
-                                style: TextStyle(
+                                style: const TextStyle(
                                   color: Colors.black,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 18,
@@ -266,9 +239,7 @@ class HomeScreen extends StatelessWidget {
                               ),
                             ],
                           ),
-                          SizedBox(
-                            height: 10,
-                          ),
+                          const SizedBox(height: 10),
                         ],
                       ),
                     );
@@ -276,7 +247,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
 
-              // Bottom navigation
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [

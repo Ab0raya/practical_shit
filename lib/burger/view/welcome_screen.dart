@@ -28,7 +28,6 @@ class WelcomeScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Logo and burger image
           Container(
             height: 200,
             width: 200,
@@ -54,7 +53,6 @@ class WelcomeScreen extends StatelessWidget {
             ),
 
           const SizedBox(height: 40),
-          // App name
           const Text(
             'Hot & Fast Food',
             style: TextStyle(
@@ -65,7 +63,6 @@ class WelcomeScreen extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           const SizedBox(height: 16),
-          // Tagline
           Text(
             'Delicious food delivered to your doorstep',
             style: TextStyle(

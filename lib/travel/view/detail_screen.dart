@@ -17,7 +17,6 @@ class DetailScreen extends StatelessWidget {
 
         return Stack(
           children: [
-            // Header image
             Container(
               height: MediaQuery.of(context).size.height * 0.4,
               width: double.infinity,
@@ -29,7 +28,6 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
 
-            // Content
             SingleChildScrollView(
               child: Column(
                 children: [
@@ -83,7 +81,7 @@ class DetailScreen extends StatelessWidget {
                             ),
                           ),
 
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
 
@@ -94,7 +92,7 @@ class DetailScreen extends StatelessWidget {
                                   height: 80,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                           AssetImage("assets/travel/city5.jpg"),
                                       fit: BoxFit.cover,
@@ -108,7 +106,7 @@ class DetailScreen extends StatelessWidget {
                                   height: 80,
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    image: DecorationImage(
+                                    image: const DecorationImage(
                                       image:
                                           AssetImage("assets/travel/city4.jpg"),
                                       fit: BoxFit.cover,
@@ -140,7 +138,7 @@ class DetailScreen extends StatelessWidget {
 
                           const SizedBox(height: 24),
 
-                          // Action buttons
+
                           Row(
                             children: [
                               Container(
@@ -192,7 +190,7 @@ class DetailScreen extends StatelessWidget {
               ),
             ),
 
-            // Back button and favorite
+
             SafeArea(
               child: Padding(
                 padding:

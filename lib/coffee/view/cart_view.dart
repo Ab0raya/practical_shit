@@ -94,7 +94,7 @@ class CartItem extends StatelessWidget {
             onPressed: onIncrement,
             icon: const Icon(Icons.add, color: Colors.white),
           ),
-          // Use Obx to listen to changes in the quantity
+
           Obx(() => Text(
             '${coffee.quantity.value}',
             style: const TextStyle(fontSize: 20, color: Colors.white),

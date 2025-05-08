@@ -138,7 +138,7 @@ class CoffeeView extends StatelessWidget {
               children: [
                 MaterialButton(
                   onPressed: () {
-                    // Add coffee with the selected quantity
+
                     controller.addToCartWithQuantity(coffee, tempQuantity.value);
                     Get.snackbar(
                       'Cart Updated',
