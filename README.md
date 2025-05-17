@@ -94,9 +94,9 @@ This repository also includes **three machine learning notebooks** using Pandas 
 
 ### 📚 Contents:
 
-* **[Model A - House Price Prediction](./ML_Models/A/house_price.ipynb)**
-* **[Model B - Ice Cream Sales Prediction](./ML_Models/B/icecream.ipynb)**
-* **[Model C - Study Hours vs Scores](./ML_Models/C/Hours_Studied.ipynb)**
+* **[Model A - House Price Prediction](./practical_ML/A/house_price.ipynb)**
+* **[Model B - Ice Cream Sales Prediction](./practical_ML/B/icecream.ipynb)**
+* **[Model C - Study Hours vs Scores](./practical_ML/C/Hours_Studied.ipynb)**
 
 These are useful for understanding basic regression tasks and data handling with Pandas.
 
