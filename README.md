@@ -1,3 +1,4 @@
+[🎥 Demo Video](./assets/vid.mp4)
 
 # Flutter , Pandas and ML models 🚀
 
