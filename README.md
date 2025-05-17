@@ -1,5 +1,5 @@
 
-# Flutter Multi-App Project , Pandas and ML models 🚀
+# Flutter , Pandas and ML models 🚀
 
 This repository contains **three Flutter applications** built with proper state management and design patterns. Each app is fully responsive and designed with a clear UI/UX approach.
 
