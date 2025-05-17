@@ -1,4 +1,7 @@
-[🎥 Demo Video](./assets/vid.mp4)
+## 🎬 Demo Video
+
+[![Watch Demo Video](https://img.shields.io/badge/Watch-Video-red?logo=youtube)](https://github.com/user-attachments/assets/33cf0b3e-3ad4-4bbd-96cb-bfffc855c52c)
+
 
 # Flutter , Pandas and ML models 🚀
 
